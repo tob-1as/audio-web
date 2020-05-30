@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Herramienta">
+    <title>Toburl</title>
+    <link rel="stylesheet" href="/test.css" />
+  </head>
+
+  <body onload="primeraCarga()">
+    <div class="container">
+      <!-----INTERVALOS------>
+      <div class="item verdito" id="intervalos"> 
+        <p class="titulo">
+          Cacha el intervalo
+        </p>
+        <div id="highScore_Intervalo" class="highScore">
+          Puntaje más alto: 0
+        </div>
+        <br>
+        <div id="puntos_Intervalo" class="puntos">
+          Puntos: 0
+        </div>
+        <button class="miBtn" id="play_intervalo">
+          &gtTocar intervalo&lt
+        </button>
+        <br>
+        <form class="miForm" id="form_inter" style="visibility: hidden">
+          <select id="sel_inter" name="sel_inter" class="selectEspecial">
+          <option disabled selected>Selecciona</option>
+          <option value="unísono">unísono</option>
+          <option value="b2">b2</option>
+          <option value="2">2</option>
+          <option value="b3">b3</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4+">4+ ó 5-</option>
+          <option value="5">5</option>
+          <option value="b6">b6</option>
+          <option value="6">6</option>
+          <option value="b7">b7</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+        </form>
+        <button id="submit_inter" class="submit" style="visibility: hidden">
+          Listo!
+        </button>
+        <div id="mensaje_inter"></div>
+      </div>
+      
+      <!---PANNING---->
+      <div class="item naranjito" id="panning">
+        <p class="titulo">
+          Cacha la espacialización
+        </p>
+        <div class="highScore" id="highScore_Paneo">
+          Puntaje más alto: 0
+        </div>
+        <br>
+        <div class="puntos" id="puntos_Paneo">
+          Puntos: 0
+        </div>
+        <button class="miBtn" onclick="playHandler()" id="play_Paneo" data-playin="false" data-disponible="true">
+          &gtReproducir&lt
+        </button>
+        <canvas id="pan_canvas" height="50px" width="300px" style="border: solid 1px black"></canvas>
+        <br>
+        <span class="mensaje pan_txt" id="pan_mouse">0</span>
+        <div id="mensaje_paneo"></div>
+        
+      </div>
+
+    </div>
+    <script src="/funk.js"></script>
+    <script src="/onlyIntervalos.js"></script>
+    <script src="/onlyPaneo.js"></script>
+  </body>
+</html>
