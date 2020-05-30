@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&display=swap');
+body{
+  font-family: 'Dosis', sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+.verdito{
+  background-color: #34eb6e;
+  transition: 0.27s ease;
+}
+.verdito:hover{
+  background-color: #45f57a;
+}
+.naranjito{
+  background-color: #f7a62d;
+  transition: 0.27s ease;
+}
+.naranjito:hover{
+  background-color: #f7b42d;
+}
+
+.item{
+  border-radius: 5px;
+  max-width: 300px;
+  min-width: 190px;
+  padding: 9px;
+  margin: 5px;
+  text-align: center;
+}
+.titulo{
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: white;
+  width: 100%;
+  user-select: none;
+}
+
+.highScore{
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-color: rgba(0,0,0, 0.5);
+  color: white;
+  padding: 2px 5px;
+}
+.puntos{
+  font-size: 1rem;
+  background-color: rgba(0,0,0, 0.5);
+  color: white;
+  padding: 2px 5px;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.miBtn{
+  height: 25px;
+  border-radius: 5px;
+  font-size: 1rem;
+  user-select: none;
+  font-family: 'Dosis', sans-serif;
+  margin: 3px;
+}
+.selectEspecial{
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  margin: 3px;
+}
+option{
+  font-family: 'Dosis', sans-serif;
+  margin: 3px;
+}
+.submit{
+  border-radius: 3px;
+  font-family: 'Dosis', sans-serif;
+  margin: 3px;
+}
+
+#mensaje_inter{
+  display: block;
+  padding: 2px;
+  user-select: none;
+}
+.fracaso{
+  color: #f7d9cb;
+  background-color: rgba(50,0,0,0.4);
+}
+.exito{
+  color: #baf5b5;
+  background-color: rgba(0,0,50, 0.4);
+}
+.pan_txt{
+  display: block;
+  padding: 2px;
+  user-select: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#pan_canvas{
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    flex-direction: column;
+  }
+}
